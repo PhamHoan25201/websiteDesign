@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quảng Bình Tourism</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="modal fade" id="myModal2">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">THÔNG TIN LIÊN HỆ</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6 col-xs-7">
+							<label>Họ và tên :</label>
+							<input type="text" pattern=".{8,}" placeholder="Nhập tên">
+						</div>
+						<div class="col-md-6 col-xs-5">
+							<label>Số điện thoại :</label>
+							<input type="text" pattern="[0-9.+]{9,}" placeholder="Nhập số điện thoại">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<label>Email :</label>
+							<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+								placeholder="your@email.com">
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<label>Địa chỉ :</label>
+							<input type="text" pattern=".{5,}" placeholder="Nhập địa chỉ">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<label>Nội dung cần liên hệ, phản ánh :</label>
+							<textarea rows="4" placeholder="Xin mời viết vào đây...."></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Gửi đi </button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+				</div>
+	
+	
+			</div>
+		</div>
+	</div><!--modal fade-->
+
+	<div id="menu" style="position: fixed; z-index: 1000; display: block; background: white;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2  text-center">
+					<img src="img/logo du lịch quảng bình.png" width="50%" style="margin-top: 5px">
+				</div><!--col-->
+				<div class="col-md-10">
+					<nav class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background: green">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse menucon" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./TongquanQuangBinh.html">GIỚI THIỆU</a>
+      </li>
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">ĐIỂM DU LỊCH</a>
+		<div class="dropdown-content">
+			<a href="./Hanhtrinh30nam.html">PHONG NHA - KẺ BÀNG</a>
+			<a href="./Hanhtrinh30nam.html">SUỐI NƯỚC MOỌC</a>
+			<a href="./Hanhtrinh30nam.html">HANG TÁM CÔ</a>
+			<a href="./Error 404.html">KHÁC...</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">TRÃI NGHIỆM</a>
+		<div class="dropdown-content">
+			<a href="./Denthomau.html">DANH LAM THẮNG CẢNH</a>
+			<a href="./Chaobanhcanh.html">ẨM THỰC</a>
+			<a href="./Error 404.html">VĂN HÓA & LỄ HỘI</a>
+			<a href="./Error 404.html">DI TÍCH LỊCH SỬ</a>
+		</div>
+	</li>
+	<li class="dropdown">
+         <a href="javascript:void(0)" class="dropbtn">DỊCH VỤ DU LỊCH</a>
+            <div class="dropdown-content">
+                <a href="#">CÔNG TY LỮ HÀNH</a>
+                <a href="#">CÁC TOUR DU LỊCH</a>
+				<a href="#">CƠ SỞ LƯU TRÚ</a>
+				<a href="#">DANH SÁCH NHÀ HÀNG</a>
+            </div>
+    </li>
+    <li class="nav-item">
+             <a class="nav-link" href="./Thông tin cần biết.html">THÔNG TIN CẦN BIẾT</a>
+    </li>
+    <li class="nav-item">
+            <a class="nav-link mya" href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-address-card"></i> LIÊN
+                     LẠC</a>
+    </li>
+      
+      <li class="nav-item">
+      	
+      		<div class="row text-center" style="margin-top: 20px">
+						<div class="col-md-3 col-3">
+							<i class="fa fa-facebook" title="Facebook"></i>
+						</div>
+						<div class="col-md-3 col-3">
+							<i class="fa fa-instagram" title="Istagram"></i>
+						</div>
+						<div class="col-md-3 col-3">
+							<i class="fa fa-youtube" title="Youtube"></i>
+						</div>
+						<div class="col-md-3 col-3">
+							<i class="fa fa-envelope" title="Mail"></i>
+						</div>
+					</div><!--row-->
+      
+	  </li> 
+	<li class="nav-item d-none d-sm-block" style="padding-left: 0px; margin-top: 12px;">
+		<form class="form-inline ml-5 " action="./index.html  ">
+			<input class="form-control" type="text" placeholder="Nhập thông tin tìm kiếm">
+			<button class="btn btn-success" type="submit">Search</button>
+		</form>
+	</li>
+    </ul>
+  </div>  
+	</nav>
+				</div><!--col-->
+			</div><!--row-->
+		</div><!--container-fluid-->
+</div><!--menu-->
+	<div id="slider">
+		<div class="container-fluid" >
+			<div class="row">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/slider1.jpg" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider2.jpg" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slider3.jpg" width="100%">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+	</div>		
+			</div><!--row-->
+		</div><!--container-fluid-->
+	</div><!--slider-->
+	<div id="contents">
+	<div class="container">
+		<div class="row" style="padding: 30px">
+			<div class="col-md-8">
+				<div style="background: white">
+				<div class="row" style="padding: 10px">
+					<div class="col-md-4">
+						<h6 style="background-color: green;color: white;padding: 5px;">THÔNG TIN NỔI BẬT</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="margin-top: 10px;padding: 10px">
+					<div class="col-md-6">
+						<img src="img/img1.jpg" width="100%">
+						<h5 style="margin-top: 10px">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời Du lịch Việt Nam</h5>
+						<p style="font-size: 11px;color: silver">Bởi Lương Công Thành <i class="fa fa-calendar"> 0</i> <i class="fa fa-comments"> 54</i></p>
+						<p style="font-size: 15px">Trong những năm tháng chiến tranh, sự ra đời của ngành Du lịch Việt Nam......</p>
+					</div><!--col-->
+					<div class="col-md-6">
+						<div class="row" style="margin-bottom: 15px;">
+							<div class="col-md-5">
+								<a href="./Hanhtrinh30nam.html">
+								<img src="img/hang-son-doong-03-280x186.jpg" width="100%">
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a href="./Hanhtrinh30nam.html" style="text-decoration: none;" >
+								<p style="font-weight: bold;font-size: 13px; color: black; ">Hành trình 30 năm khám phá Vương Quốc hang động</p>
+								</a>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="margin-bottom: -5px;">
+							<div class="col-md-5">
+								<a href="./Hanhtrinh30nam.html">
+								<img src="img/imgr1.jpg" width="100%">
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a href="./Hanhtrinh30nam.html" style="text-decoration: none;">
+								<p style="font-weight: bold;font-size: 13px; color: black; ">Liên kết hợp tác phát triển du lịch Quảng Bình-Thái Nguyên</p>
+								</a>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="margin-bottom: 15px;">
+							<div class="col-md-5">
+								<a href="./Hanhtrinh30nam.html">
+								<img src="img/zipline-song-chay-280x186.jpg" width="100%">
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a href="./Hanhtrinh30nam.html"  style="text-decoration: none;">
+								<p style="font-weight: bold;font-size: 13px; color: black; ">Khởi sắc du lịch Quảng Bình</p>
+								</a>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" >
+							<div class="col-md-5">
+								<a href="./Hanhtrinh30nam.html">
+								<img src="img/charte-HN-ĐH-480x320.jpg" width="100%">
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a href="./Hanhtrinh30nam.html"  style="text-decoration: none;">
+								<p style="font-weight: bold;font-size: 13px; color: black; ">Độc đáo chuyến tàu charter đưa du khách từ Hà Nội về...</p>
+								</a>
+								<p style="font-size: 11px;color: silver;margin-top: -9px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div>
+						</div><!--row-->
+					</div><!--col-->
+				</div><!--row-->
+				<div style="background: white;margin-top: 30px">
+				<div class="row" style="padding: 10px">
+					<div class="col-md-4">
+						<h6 style="background-color: green;color: white;padding: 5px;">VIDEO NỔI BẬT</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="padding: 10px">
+					<div class="col-md-12">
+					<iframe width="665" height="400" src="https://www.youtube.com/embed/X1S6u5WOTXE" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h6>Kinh nghiệm đi du lịch Quảng Bình (Việt Nam) - Wanderlust Tips</h6>
+                 <p style="font-size: 11px;color: silver;"><i class="fa fa-calendar"> 7</i> <i class="fa fa-comments"> 0</i></p>
+             </div>
+             </div><!--col-->
+				</div><!--row-->
+				<div style="background: white;margin-top: 30px">
+				<div class="row" style="padding: 10px" >
+					<div class="col-md-3">
+						<h6 style="background-color: green;color: white;padding: 5px;">ĐIỂM DU LỊCH</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="padding: 10px">
+					<div class="col-md-12">
+						<a href="./Error 404.html">
+						<img src="img/imgc1.jpg" width="100%">
+						</a>
+						<div style="position: absolute;top: 40%;margin-left: 10px">
+						<h5 style="color: white">Suối nước Moọc</h5>
+						<p style="font-size: 11px;color: white;"><i class="fa fa-calendar"> 7</i> <i class="fa fa-comments"> 0</i></p>
+                          <p style="color: white;font-size: 15px;padding: 0 10px 0 10px">Nước Moọc mới đầu nghe ai cũng tò mò. Theo tiếng địa phương ở đây “moọc” có nghĩa là “mọc” tức là ...</p>
+					</div>
+				</div>
+					</div><!--col-->
+				</div><!--row-->
+				<div style="background: white;margin-top: 30px">
+				<div class="row"  style="padding: 10px">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-5">
+								<img src="img/zipline-song-chay-280x186.jpg" width="100%">
+							</div><!--col-->
+							<div class="col-md-7">
+								<p style="font-size: 13px;font-weight: bold;">Sông Chày - Hang Tối</p>
+								<p style="font-size: 11px;color: silver;margin-top: -10px"><i class="fa fa-calendar"> 20/6/2020</i> <i class="fa fa-comments"> 54</i> <i class="fa fa-eye"> 576</i></p>
+								<p style="font-size: 12px;color: black;margin-top: -10px">Sông Chày bắt nguồn từ khối núi đá vôi Kẻ Bàng chảy quanh ...</p>
+							</div><!--col-->
+						</div><!--row-->
+					</div><!--col-->
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-5">
+								<img src="img/da-nhay-02-11.jpg" width="100%">
+							</div><!--col-->
+							<div class="col-md-7">
+								<p style="font-size: 13px;font-weight: bold;">Đá Nhảy</p>
+								<p style="font-size: 11px;color: silver;margin-top: -10px"><i class="fa fa-calendar"> 20/6/2020</i> <i class="fa fa-comments"> 54</i> <i class="fa fa-eye"> 576</i></p>
+								<p style="font-size: 12px;color: black;margin-top: -10px">Từ thành phố Đồng Hới, đi theo quốc lộ 1A...</p>
+							</div><!--col-->
+						</div><!--row-->
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row"  style="padding: 10px">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-5">
+								<img src="img/hang-tam-co-02-1024x683.jpg" width="100%">
+							</div><!--col-->
+							<div class="col-md-7">
+								<p style="font-size: 13px;font-weight: bold;">Hang "Tám cô"</p>
+								<p style="font-size: 11px;color: silver;margin-top: -10px"><i class="fa fa-calendar"> 20/6/2020</i> <i class="fa fa-comments"> 54</i> <i class="fa fa-eye"> 576</i></p>
+								<p style="font-size: 12px;color: black;margin-top: -10px">Hang “Tám Cô” (hay còn gọi là hang Tám thanh ...</p>
+							</div><!--col-->
+						</div><!--row-->
+					</div><!--col-->
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-5">
+								<img src="img/bien-nhat-le-03.jpg" width="100%">
+							</div><!--col-->
+							<div class="col-md-7">
+								<p style="font-size: 13px;font-weight: bold;">Biển Nhật lệ</p>
+								<p style="font-size: 11px;color: silver;margin-top: -10px"><i class="fa fa-calendar"> 20/6/2020</i> <i class="fa fa-comments"> 54</i> <i class="fa fa-eye"> 576</i></p>
+								<p style="font-size: 12px;color: black;margin-top: -10px">Cách trung tâm TP Đồng Hới khoảng 2km về phía...</p>
+							</div><!--col-->
+						</div><!--row-->
+					</div><!--col-->
+				</div><!--row-->
+			</div>
+			<div style="background: white;margin-top: 30px">
+				<div class="row" style="padding: 10px">
+					<div class="col-md-4">
+						<a href="./Hanhtrinh30nam.html">
+						<img src="img/travel1.jpg" width="100%">
+						<p style="position: absolute;top: 50%;right: 25%;font-size: 12px;border: 1px solid white; border-spacing: 2px;"><a  style="background-color: white;color: black" href="#"> HƯỚNG DẪN DU LỊCH</a></p>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="./Sanbay.html">
+						<img src="img/sb4.jpg" width="100%">
+						<p style="position: absolute;top: 50%;right: 35%;font-size: 12px;border: 1px solid white; border-spacing: 2px;"><a  style="background-color: white;color: black" href="#"> VÉ MÁY BAY</a></p>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="./Error 404.html">
+						<img src="img/thanh-pho-dong-hoi-quang-binh-01-280x186.jpg" width="100%">
+						<p style="position: absolute;top: 50%;right: 35%;font-size: 12px;border: 1px solid white; border-spacing: 2px;"><a  style="background-color: white;color: black" href="#"> ĐIỂM ĐẾN</a></p>
+						</a>
+					</div>
+				</div><!--row-->
+			</div>
+			<div class="row" style="margin-top: 30px">
+				<div class="col-md-12">
+				<img src="img/banner.gif" width="100%">
+             </div>
+			</div><!--row-->
+		
+			<div class="row" style="margin-top: 30px">
+				<div class="col-md-6">
+					<div style="background: white;">
+					<div class="row" style="padding: 10px" >
+					<div class="col-md-9">
+						<h6 style="background-color: green;color: white;padding: 5px;">DANH LAM THẮNG CẢNH</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="padding: 10px">
+					<div class="col-md-12">
+						<a href="./Error 404.html">
+				<img src="img/trees.jpg" width="100%">
+						</a>
+				<h5 style="margin-top: 10px">Khám phá thiên nhiên rừng Gáo – hang Ozo – hang Hoàn Mỹ</h5>
+				<p style="font-size: 11px;color: silver;"><i class="fa fa-calendar"> 7</i> <i class="fa fa-comments"> 0</i></p>
+				<p style="font-size: 13px">Với nguồn tài nguyên thiên nhiên đa dạng, Quảng Bình có điều kiện đặc biệt...</p>
+			</div><!--col-->
+				</div><!--row-->
+				<div style="padding:0 10px 0 10px">
+					<hr>
+				</div>
+				<div class="row" style="padding: 10px">
+					<div class="col-md-5">
+						<a href="./Denthomau.html">
+						<img src="img/den-thanh-mau-lieu-hanh-cong-chua-01-280x186.jpg" width="100%">
+						</a>
+					</div><!--col-->
+					<div class="col-md-7">
+						<p style="font-size: 12px;font-weight: bold;">Đền Thánh Mẫu Liễu Hạnh Công chúa</p>
+						<p style="font-size: 11px;color: silver;margin-top: -15px"><i class="fa fa-calendar"> 27/12/2019</i></p>
+						<p style="font-size: 12px;margin-top: -15px">Đền nằm dưới chân núi Đèo Ngang, ở một khu đất ...</p>
+					</div><!--col-->
+				</div><!--row-->
+				<div style="padding:0 10px 0 10px">
+					<hr>
+				</div>
+				<div class="row" style="padding: 10px">
+					<div class="col-md-5">
+						<img src="img/ben-pha-gianh-01-1024x614.jpg" width="100%">
+					</div><!--col-->
+					<div class="col-md-7">
+						<p style="font-size: 12px;font-weight: bold;">Bến Phà Gianh</p>
+						<p style="font-size: 11px;color: silver;margin-top: -15px"><i class="fa fa-calendar"> 27/12/2019</i></p>
+						<p style="font-size: 12px;margin-top: -15px">Di tích Lịch sử bến phà Gianh nằm ở hạ Lưu sông ...</p>
+					</div><!--col-->
+				</div><!--row-->
+			</div>
+			</div><!--col-->
+			<div class="col-md-6">
+					<div style="background: white;">
+					<div class="row" style="padding: 10px" >
+					<div class="col-md-9">
+						<h6 style="background-color: green;color: white;padding: 5px;">ẨM THỰC</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="padding: 10px">
+					<div class="col-md-12">
+						<a href="./Chaobanhcanh.html">
+				<img src="img/sohuyet2.jpg" width="100%">
+				</a>
+				<h5 style="margin-top: 10px">Sò Huyết Sông Roòn</h5>
+				<p style="font-size: 11px;color: silver;"><i class="fa fa-calendar"> 7</i> <i class="fa fa-comments"> 0</i></p>
+				<p style="font-size: 13px">Quảng Bình có nguồn hải sản rất phong phú, trong đó nổi bật phải kể...</p>
+			</div><!--col-->
+				</div><!--row-->
+				<div style="padding:0 10px 0 10px">
+					<hr>
+				</div>
+				<div class="row" style="padding: 10px">
+					<div class="col-md-5">
+						<a href="./Chaobanhcanh.html">
+						<img src="img/dac-san-banh-canh-quang-binh-01.jpg" width="100%">
+						</a>
+					</div><!--col-->
+					<div class="col-md-7">
+						<p style="font-size: 12px;font-weight: bold;">Cháo Bánh Canh</p>
+						<p style="font-size: 11px;color: silver;margin-top: -15px"><i class="fa fa-calendar"> 27/12/2019</i></p>
+						<p style="font-size: 12px;margin-top: -15px">Bánh canh là một món ăn bình dân, khá phổ biến ở Quảng Bình, vì...</p>
+					</div><!--col-->
+				</div><!--row-->
+				<div style="padding:0 10px 0 10px">
+					<hr>
+				</div>
+				<div class="row" style="padding: 10px">
+					<div class="col-md-5">
+						<img src="img/dac-san-khoai-deo-quang-binh.jpg" width="100%">
+					</div><!--col-->
+					<div class="col-md-7">
+						<p style="font-size: 12px;font-weight: bold;">Khoai gieo Quảng Bình</p>
+						<p style="font-size: 11px;color: silver;margin-top: -15px"><i class="fa fa-calendar"> 27/12/2019</i></p>
+						<p style="font-size: 12px;margin-top: -15px">Ở Quảng Bình có một món ăn độc đáo chế biến từ kh...</p>
+					</div><!--col-->
+				</div><!--row-->
+			</div>
+			</div><!--col-->
+			</div><!--row-->
+			<div style="background: white;margin-top: 30px">
+				<div class="row" style="padding: 10px" >
+					<div class="col-md-4">
+						<h6 style="background-color: green;color: white;padding: 5px;">CƠ SỞ LƯU TRÚ</h6>
+					</div><!--col-->
+				</div><!--row-->
+			<div class="row" style="padding: 10px">
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<a href="./Sunspa.html">
+						<img src="img/gold.jpg" width="100%">
+						</a>
+						<p style="position: absolute;top: 80%;left: 10%; font-size: 12px;color: white;font-weight: bold;">Gold coast hotel resort & spa</p>
+					</div><!--col-->
+					</div><!--row-->
+					<div class="row" style="margin-top: 12px">
+						<div class="col-md-12 text-center">
+							<a href="./Sunspa.html">
+						<img src="img/bao-ninh-beach-resort-01.jpg" width="100%">
+						</a>
+						<p style="position: absolute;top: 80%;left: 10%; font-size: 12px;color: white;font-weight: bold;"> BAO NINH BEACH RESORT</p>
+					</div><!--col-->
+					</div><!--row-->
+					<div class="row" style="margin-top: 13px">
+						<div class="col-md-12 text-center">
+							<a href="./Sunspa.html">
+						<img src="img/vinpearl20quangbinh.jpg" width="100%">
+						</a>
+						<p style="position: absolute;top: 80%;left: 10%; font-size: 12px;color: white;font-weight: bold;">VINPERT QUANG BINH HOTEL</p>
+					</div><!--col-->
+					</div><!--row-->
+				</div><!--col-->
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<a href="./Sunspa.html">
+						<img src="img/sun-spa-resort-01.jpg" width="100%">
+						</a>
+						<p style="position: absolute;top: 80%;left: 10%; font-size: 12px;color: white;font-weight: bold;">SUN SPA RESORT</p>
+					</div><!--col-->
+					</div><!--row-->
+					<div class="row" style="margin-top: 30px">
+						<div class="col-md-6" style="margin-top: 5px">
+							<a href="./Sunspa.html">
+							<img src="img/khach-san-seastar-quang-binh.jpg" width="100%">
+							</a>
+						<p style="position: absolute;top: 80%;left: 10%; font-size: 12px;color: white;font-weight: bold;">SEA START RESORT</p>
+						</div>
+						<div class="col-md-6" style="margin-top: 5px">
+							<a href="./Sunspa.html">
+							<img src="img/khach-san-vinh-hoang-1.jpg" width="100%">
+							</a>
+						<p style="position: absolute;top: 70%;left: 10%; font-size: 12px;color: white;font-weight: bold;">PHONG NHA LAKE HOUSE</p>
+						</div>
+					</div><!--row-->
+				</div><!--col-->
+			</div>
+			</div><!--row-->
+			<div style="background: white;margin-top: 30px">
+				<div class="row" style="padding: 10px" >
+					<div class="col-md-4">
+						<h6 style="background-color: green;color: white;padding: 5px;">DANH SÁCH NHÀ HÀNG</h6>
+					</div><!--col-->
+				</div><!--row-->
+			<div class="row" style="padding: 10px">
+				<div class="col-md-4">
+					<a href="./Everland.html">
+					<img src="img/res.jpg" width="100%">
+					</a>
+					<p style="font-size: 13px;position: absolute;top: 90%;left: 10%;font-weight: bold; color: white">Nhà hàng chay Bồ Đề Duyên</p>
+					<p style="font-size: 8px;position: absolute;top: 5%;left: 10%;color: white;background-color: green">DANH SÁCH NHÀ HÀNG</p>
+				</div>
+				<div class="col-md-4">
+					<a href="./Everland.html">
+					<img src="img/nha-hang-everland-quang-binh-01.jpg" width="100%" height="275px">
+					</a>
+					<p style="font-size: 13px;position: absolute;top: 90%;left: 10%;font-weight: bold; color: white">Nhà hàng EverLand Quảng Bình</p>
+					<p style="font-size: 8px;position: absolute;top: 5%;left: 10%;color: white;background-color: green">DANH SÁCH NHÀ HÀNG</p>
+				</div>
+				<div class="col-md-4">
+					<a href="./Everland.html">
+					<img src="img/chang-chang-quan-03.jpg" width="100%" height="275px">
+					</a>
+					<p style="font-size: 13px;position: absolute;top: 90%;left: 10%;font-weight: bold; color: white">Nhà hàng Chang Chang</p>
+					<p style="font-size: 8px;position: absolute;top: 5%;left: 10%;color: white;background-color: green">DANH SÁCH NHÀ HÀNG</p>
+				</div>
+			</div><!--row-->
+		</div>
+			</div><!--col-->
+			<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/cloud.png" width="100%">
+					</div>
+				</div>
+				<div class="row" style="margin-top: 20px">
+					<div class="col-md-12">
+						<img src="img/hotro.jpg" width="100%">
+					</div>
+				</div>
+				<div class="row" style="margin-top: 20px">
+					<div class="col-md-12">
+						<img src="img/pa.jpg" width="100%">
+					</div>
+				</div>
+				<div style="background: white;margin-top: 20px">
+				<div class="row" style="padding: 10px" >
+					<div class="col-md-8">
+						<h6 style="background-color: green;color: white;padding: 5px;">BÀI VIẾT XEM NHIỀU</h6>
+					</div><!--col-->
+				</div><!--row-->
+				<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/imgr1.jpg" width="100%">
+							</div>
+							<div id="information" class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Liên kết hợp tác phát triển du lịch Quảng Bình-Thái Nguyên</p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/dem-dong-hoi.jpg" width="100%">
+							</div>
+							<div class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Tiềm năng du lịch Đồng Hới</p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/lich-su-van-hoa-01-270x186.jpg" width="100%">
+							</div>
+							<div class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Lịch sử - Văn hóa</p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/le-hoi-dua-thuyen-truyen-thong-tren-song-kien-giang-01.jpg" width="100%">
+							</div>
+							<div class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Lễ hội đua thuyền truyền thống trên sông Kiến Giang</p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/sondonganhsang.jpg" width="100%">
+							</div>
+							<div class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Hãy chấp nhận sự thực - Sơn Đoong không phải nơi dành cho bạn </p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						<div class="row" style="padding: 10px">
+							<div class="col-md-5">
+								<img src="img/MeSuot1.jpg" width="100%">
+							</div>
+							<div class="col-md-7">
+								<p style="font-weight: bold;font-size: 13px">Mẹ Suốt-Người mẹ anh hùng</p>
+								<p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+							</div>
+						</div><!--row-->
+						
+			</div><!--color-->
+			</div><!--col-->
+		</div><!--row-->
+	</div><!--container-->
+	</div><!--contents-->
+	<div id="link">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h4 style="color: green;padding: 30px 0 30px 0">LIÊN KẾT WEBSITE</h4>
+			</div><!--col-->
+		</div><!--row-->
+		<div class="row text-center">
+			<div class="col-md-2">
+				<img src="img/l1.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l2.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l3.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l4.jpg" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l5.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l6.jpg" width="50%">
+			</div>
+		</div><!--row-->
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h4 style="color: green;padding: 30px 0 30px 0">BÁO CHÍ QUỐC TẾ</h4>
+			</div><!--col-->
+		</div><!--row-->
+		<div class="row text-center">
+			<div class="col-md-2">
+				<img src="img/b1.jpg" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/b2.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/b3.jpg" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/b4.png" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/b5.jpeg" width="50%">
+			</div>
+			<div class="col-md-2">
+				<img src="img/l6.jpg" width="50%">
+			</div>
+		</div><!--row-->
+	</div><!--container-->
+	</div><!--link-->
+	
+	
+	<div id="footer" style="background: #2c2f34">
+		<div class="social-button">
+			<div class="social-button-content">
+				<a href="tel:0981481368" class="call-icon" rel="nofollow">
+					<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					<div class="animated alo-circle"></div>
+					<div class="animated alo-circle-fill  "></div>
+					<span>Hotline: 037 778 887</span>
+				</a>
+				<a href="sms:0981481368" class="sms">
+					<i class="fa fa-weixin" aria-hidden="true"></i>
+					<span>SMS: 037 778 887 </span>
+				</a>
+				<a href="https://www.facebook.com/phamhoan252" class="mes">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					<span>Nhắn tin Facebook</span>
+				</a>
+				<a href="http://zalo.me/0377788187" class="zalo">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i>
+					<span>Zalo: 037.778.887</span>
+				</a>
+			</div>
+		
+			<a class="user-support">
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+				<div class="animated alo-circle"></div>
+				<div class="animated alo-circle-fill"></div>
+			</a>
+		</div><!--button chat-->
+		<div class="container">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-8">
+					<h6 style="background: black;color: white;padding: 5px;margin-top: 30px">ĐĂNG KÝ NHẬN BẢN TIN</h6>
+				</div><!--col-->
+			</div><!--row-->
+			<p style="color: white;font-size:13px ">Theo dõi Bản tin của chúng tôi để nhận các tin tức và sự kiện mới nhất. Đừng bỏ lỡ!</p>
+			<form>
+				<input type="text" name="name" placeholder="Tên của bạn*">
+				<input style="margin-top: 5px" type="email" name="email" placeholder="Email của bạn*">
+				<button type="submit" name="done">ĐĂNG KÝ</button>
+			</form>
+		</div><!--col-->
+		<div class="col-md-4 textp">
+			<div class="row">
+				<div class="col-md-8">
+					<h6 style="background: black;color: white;padding: 5px;margin-top: 30px">DANH MỤC NỔI BẬT</h6>
+				</div><!--col-->
+			</div><!--row-->
+              <p style="margin-top: 10px">Tin tức</p>
+              <p>Danh lam thắng cảnh</p>
+              <p>Sự kiện</p>
+              <p>Thông tin cần biết</p>
+              <p>Ẩm thực</p>
+              <p>Khác</p>
+              <p>Phong Nha – Kẻ Bàng</p>
+              <p>Danh nhân tiêu biểu</p>
+              <p>Di tích lịch sử</p>
+              <p>Văn hóa & Lễ hội</p>
+		</div><!--col-->
+		<div class="col-md-4 textp">
+			<div class="row">
+				<div class="col-md-8">
+					<h6 style="background: black;color: white;padding: 5px;margin-top: 30px">BÀI VIẾT GẦN ĐÂY</h6>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row" style="margin-top: 10px">
+				<div class="col-md-5">
+					<img src="img/f1.jpg" width="100%">
+				</div><!--col-->
+				<div class="col-md-7" style="margin-top: 10px">
+					<p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời Du lịch Việt Nam</p>
+					<p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i class="fa fa-comments"> 0</i> </p>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row" style="margin-top: -10px">
+				<div class="col-md-5">
+					<img src="img/f1.jpg" width="100%">
+				</div><!--col-->
+				<div class="col-md-7" style="margin-top: 10px">
+					<p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời Du lịch Việt Nam</p>
+					<p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i class="fa fa-comments"> 0</i> </p>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row" style="margin-top: -10px">
+				<div class="col-md-5">
+					<img src="img/f1.jpg" width="100%">
+				</div><!--col-->
+				<div class="col-md-7" style="margin-top: 10px">
+					<p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời Du lịch Việt Nam</p>
+					<p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i class="fa fa-comments"> 0</i> </p>
+				</div><!--col-->
+			</div><!--row-->
+		</div><!--col-->
+	</div><!--row-->
+	<div>
+		<hr style="background: #ccc">
+	</div>
+	<div class="row" style="padding: 30px; color: white;">
+		<div class="col-md-3">
+			<img src="./img/logo du lịch quảng bình.png" width="100%">
+	
+		</div>
+		<div class="col-md-6">
+			<h4>VỀ CHÚNG TÔI</h4>
+			<p>Nhằm quảng bá hình ảnh du lịch Quảng Bình đến với mọi người trong và ngoài nước và
+				cho các du khách biết Quảng Bình là một thành phố năng động, đáng sống. Du lịch Quảng
+				Bình không chỉ đẹp ở danh lam thắng cảnh mà nó còn đẹp ở văn hóa và con người. Đội ngũ
+				phát triển luôn mong sẽ có những thước phim, hình ảnh chất lượng nhất để đưa bạn đọc đến
+				gần hơn với Quảng Bình. Website còn lập ra nhằm mục đích hướng dẫn cho các du khách nhưng
+				cửa hàng, món ăn, và nhà hàng đáp ứng nhu cầu của chính mỗi một con người khi đặt chân đến nơi
+				đây.
+			</p>
+	
+		</div>
+		<div class="col-md-3">
+			<h4>THEO DÕI CHÚNG TÔI</h4>
+			<i class="fa fa-facebook" style="padding-left: 20px;"></i>
+			<i class="fa fa-instagram" style="padding-left: 50px;"></i>
+			<i class="fa fa-youtube" style="padding-left: 50px;"></i>
+			<i class="fa fa-envelope" style="padding-left: 50px;"></i>
+		</div>
+		<!--col-->
+	</div>
+	<!--row-->
+	</div><!--container-->
+	</div><!--footer-->
+	
+	<div id="copyright" style="background: black;">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<p style="color: white;font-size: 15px;margin-top: 10px">©Designed by PhamHoan-19CDTH41</p>
+			</div>
+		</div><!--row-->
+	</div><!--container-->
+</div><!--copyright-->
+<script>
+	$(document).ready(function () {
+		$('.user-support').click(function (event) {
+			$('.social-button-content').slideToggle();
+		});
+	});
+</script>
+<script src="./js/backtotop.js"></script>
+</body>
+</html>

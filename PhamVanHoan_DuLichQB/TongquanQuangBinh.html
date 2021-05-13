@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng quan Quảng Bình</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <script>
+        $(document).ready(function () {
+            $(".wish-icon i").click(function () {
+                $(this).toggleClass("fa-heart fa-heart-o");
+            });
+        });	
+    </script>
+</head>
+<body style="background: #eeeeee;">
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">THÔNG TIN LIÊN HỆ</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-7">
+                            <label>Họ và tên:</label>
+                            <input type="text" pattern=".{8,}" placeholder="Nhập tên">
+                        </div>
+                        <div class="col-md-6 col-xs-5">
+                            <label>Số điện thoại :</label>
+                            <input type="text" pattern="[0-9.+]{9,}" placeholder="Nhập số điện thoại">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <label>Email :</label>
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                placeholder="your@email.com">
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <label>Địa chỉ :</label>
+                            <input type="text" pattern=".{5,}" placeholder="Nhập địa chỉ">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <label>Nội dung cần liên hệ, phản ánh :</label>
+                            <textarea rows="4" placeholder="Xin mời viết vào đây..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Gửi đi </button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div id="menu" style=" background: white;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2  text-center">
+                    <a href="./index.html">
+                    <img src="img/logo du lịch quảng bình.png" width="50%" style="margin-top: 5px" >
+                    </a>
+                </div>
+                <!--col-->
+                <div class="col-md-10">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                            style="background: green">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menucon" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./TongquanQuangBinh.html">GIỚI THIỆU</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">ĐIỂM DU LỊCH</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">PHONG NHA - KẺ BÀNG</a>
+                                        <a href="#">SUỐI NƯỚC MOỌC</a>
+                                        <a href="#">HANG TÁM CÔ</a>
+                                        <a href="#">KHÁC...</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">TRÃI NGHIỆM</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">DANH LAM THẮNG CẢNH</a>
+                                        <a href="#">ẨM THỰC</a>
+                                        <a href="#">VĂN HÓA & LỄ HỘI</a>
+                                        <a href="#">DI TÍCH LỊCH SỬ
+                                
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">DỊCH VỤ DU LỊCH</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">CÔNG TY LỮ HÀNH</a>
+                                        <a href="#">CÁC TOUR DU LỊCH</a>
+                                        <a href="#">CƠ SỞ LƯU TRÚ</a>
+                                        <a href="#">DANH SÁCH NHÀ HÀNG</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Thông tin cần biết.html">THÔNG TIN CẦN BIẾT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mya" href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-address-card"></i> LIÊN
+                                        LẠC</a>
+                                </li>
+                                <li class="nav-item">
+    
+                                    <div class="row text-center" style="margin-top: 20px; margin-left: 10px;">
+                                        <div class="col-md-3 col-3">
+                                            <i class="fa fa-facebook" title="Facebook"></i>
+                                        </div>
+                                        <div class="col-md-3 col-3">
+                                            <i class="fa fa-instagram" title="Istagram"></i>
+                                        </div>
+                                        <div class="col-md-3 col-3">
+                                            <i class="fa fa-youtube" title="Youtube"></i>
+                                        </div>
+                                        <div class="col-md-3 col-3">
+                                            <i class="fa fa-envelope" title="Mail"></i>
+                                        </div>
+                                    </div>
+                                    <!--row-->
+    
+                                </li>
+                                <li class="nav-item d-none d-sm-block" style="padding-left: 0px; margin-top: 12px;">
+                                    <form class="form-inline ml-5 " action="./index.html  ">
+                                        <input class="form-control" type="text" placeholder="Nhập thông tin tìm kiếm">
+                                        <button class="btn btn-success" type="submit">Search</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div><!--col-->
+            </div><!--row-->
+        </div><!--container-fluid-->
+    </div><!--menu-->
+    <div id="banner">
+        <div class="container-fluid">
+            <div class="row d-none d-md-block" style="background:black;">
+                <img style="opacity: 0.5;" src="./img/images641312_Doi_bo_song_gianh-gigapixel.jpg" width="100%">
+                <div style="position: absolute;  top: 25%; margin-left: 15%;">
+                    <b><p style="color:white; font-size: 32px;  margin-left: 300px;">TỔNG QUAN QUẢNG BÌNH</p></b>
+                </div>
+                <div style=" position: absolute;  top: 250px; margin-left: 38%; color: white;">
+                    <p style=" font-size: 13;"> 
+                        <span> Trang chủ</span> > 
+                        <span> Giới thiệu </span> >
+                        <span> Tổng quan Quảng Bình </span> 
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div><!--banner-->
+    <div id="Hanhtrinh">
+        <div class="container">
+            <div class="row" style="padding: 30px;">
+                <div class="col-md-8">
+                    <div style="background: white">
+                        <div id="news" class="row">
+                            <div class="col-md-2">
+                                <p>Tin tức</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p style="margin: 10px 0 7px 10px;padding-left: 12px; background: white; font-size: 11px;color:#999999;margin-top: 1px"><i class="fa fa-calendar">28/7/2020</i> <i class=" fa fa-comments"> 45</i> <i class="fa fa-eye"> 120</i></p>
+                            </div>
+                        </div>
+                        <div class="d-none d-sm-block">
+                        <div class="row" style="border: 1px solid #a7a0a0; margin: 0 15px 0 15px;">
+                            <div class="col-md-2" style="margin: 7px 0 7px 0; top: 9px;">
+                               <b><p>CHIA SẺ</p></b>
+                            </div>
+                            <div class="col-md-1" style="color:blue; font-size: 35px; padding-left: 1px; margin-right: -13px;">
+                                <i class="fa fa-facebook-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#40C4FF; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-twitter-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#EB4026; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-google-plus-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#C92228; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-pinterest-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#0077B5; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-linkedin-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#34465D; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-tumblr-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#FF4500; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-reddit-square"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#179CDE; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-telegram"></i>
+                            </div>
+                            <div class="col-md-1" style="color:#A7A7A7; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                <i class="fa fa-envelope-square"></i>
+                            </div>
+                        </div><!---->
+                        </div>
+                        <div class="row" style="padding:0 10px 0 10px; text-align: justify;">
+                            <div class="col-md-12" style="margin-top: 20px;">
+                                <b><i><p>Tỉnh Quảng Bình nằm ở Bắc Trung Bộ, Việt Nam, với diện tích tự nhiên 8.065 km2, dân số năm 2008 có 857.818 người.</p></i></b>
+                                <figure><center>
+                                    <img src="./img/thanh-pho-dong-hoi.jpg" width="100%">
+                                    <figcaption><i>Thành phố Đồng Hới hôm nay</i></figcaption>
+                                </center></figure>
+                                <p><b>Vị trí địa lý: Toạ độ địa lý ở phần đất liền là:</b></p>
+                                <p>+ Điểm cực Bắc: 18005’ 12″ vĩ độ Bắc</p>
+                                <p>+ Điểm cực Nam: 17005’ 02″ vĩ độ Bắc</p>
+                                <p>+ Điểm cực Đông: 106059’ 37″ kinh độ Đông</p>
+                                <p>+ Điểm cực Tây: 105036’ 55″ kinh độ Đông</p>
+                                <p>Tỉnh có bờ biển dài 116,04 km ở phía Đông và có chung biên giới với Lào 201,87 km ở phía Tây, có cảng Hòn La, Quốc lộ I
+                                A và đường Hồ Chí Minh, đường sắt Bắc Nam, quốc lộ 12 và tỉnh lộ 20, 16 chạy từ Đông sang Tây qua cửa khẩu Quốc tế Cha
+                                Lo và một số cửa khẩu phụ khác nối liền với Nước CHDCND Lào.</p>
+                                <p><b>Địa hình: </b>Địa hình Quảng Bình hẹp và dốc từ phía Tây sang phía Đông. 85% Tổng diện tích tự nhiên là đồi núi. Toàn bộ diện tích
+                                được chia thành vùng sinh thái cơ bản: Vùng núi cao, vùng đồi và trung du, vùng đồng bằng, vùng cát ven biển.</p>
+                                <p><b>Khí hậu: </b>Quảng Bình nằm ở vùng nhiệt đới gió mùa và luôn bị tác động bởi khí hậu của phía Bắc và phía Nam và được chia làm hai
+                                mùa rõ rệt:</p>
+                                <p>+ Mùa mưa từ tháng 9 đến tháng 3 năm sau. Lượng mưa trung bình hàng năm 2.000 – 2.300mm/năm. Thời gian mưa tập trung vào
+                                các tháng 9, 10 và 11.</p>
+                                <p>+ Mùa khô từ tháng 4 đến tháng 8 với nhiệt độ trung bình 24oC – 25oC. Ba tháng có nhiệt độ cao nhất là tháng 6, 7 và 8.</p>
+                                <p><b>Tài nguyên đất: </b>Tài nguyên đất được chia thành hai hệ chính: Đất phù sa ở vùng đồng bằng và hệ pheralit ở vùng đồi và núi với 15 loại và
+                                các nhóm chính như sau: nhóm đất cát, đất phù sa và nhóm đất đỏ vàng. Trong đó nhóm đất đỏ vàng chiếm hơn 80% diện tích
+                                tự nhiên, chủ yếu ở địa hình đồi núi phía Tây, đất cát chiếm 5,9% và đất phù sa chiếm 2,8% diện tích.</p>
+                                <p><b>Tài nguyên động, thực vật: </b>Quảng Bình nằm trong khu vực đa dạng sinh học Bắc Trường Sơn – nơi có khu hệ thực vật, động vật đa dạng, độc đáo với
+                                nhiều nguồn gen quý hiếm. Đặc trưng cho đa dạng sinh học ở Quảng Bình là vùng Karst Phong Nha – Kẻ Bàng.</p>
+                                <p><b>Về động vật có: </b>493 loài, 67 loài thú, 48 loài bò sát, 297 loài chim, 61 loài cá… có nhiều loài quý hiếm như Voọc Hà Tĩnh, Gấu, Hổ, Sao
+                                La, Mang Lớn, Gà Lôi lam đuôi trắng, Gà Lôi lam mào đen, Trĩ…</p>
+                                <figure><center>
+                                    <img src="./img/dem-dong-hoi.jpg" width="100%">
+                                    <figcaption><i>Đêm Đồng Hới</i></figcaption>
+                                </center></figure>
+                                <p><b>Về đa dạng thực vật: </b>Với diện tích rừng 486.688 ha, trong đó rừng tự nhiên 447.837 ha, rừng trồng 38.851ha, trong đó có 17.397 ha rừng thông,
+                                diện tích không có rừng 146.386 ha. Thực vật ở Quảng Bình đa dạng về giống loài: có 138 họ, 401 chi, 640 loài khác nhau.
+                                Rừng Quảng Bình có nhiều loại gỗ quý như lim, gụ, mun, huỵnh, thông và nhiều loại mây tre, lâm sản quý khác. Quảng Bình
+                                là một trong những tỉnh có trữ lượng gỗ cao trong toàn quốc. Hiện nay trữ lượng gỗ là 31triệu m3.</p>
+                                <p><b>Tài nguyên biển và ven biển: </b>Quảng Bình có bờ biển dài 116,04 km với 5 cửa sông, trong đó có hai cửa sông lớn, có cảng Nhật Lệ, cảng Gianh, cảng Hòn
+                                La, Vịnh Hòn La có diện tích mặt nước 4 km2, có độ sâu trên 15 mét và xung quanh có các đảo che chắn: Hòn La, Hòn Cọ,
+                                Hòn Chùa có thể cho phép tàu 3-5 vạn tấn vào cảng mà không cần nạo vét. Trên đất liền có diện tích khá rộng (trên 400
+                                ha) thuận lợi cho việc xây dựng khu công nghiệp gắn với cảng biển nước sâu.</p>
+                                <p>Bờ biển có nhiều thắng cảnh đẹp, cùng với thềm lục địa rộng gấp 2,6 lần diện tích đất liền tạo cho Quảng Bình có một ngư
+                                trường rộng lớn với trữ lượng khoảng 10 vạn tấn và phong phú về loài (1650 loài), trong đó có những loại quý hiếm như
+                                tôm hùm, tôm sú, mực ống, mực nang, san hô. Phía Bắc Quảng Bình có bãi san hô trắng với diện tích hàng chục ha, đó là
+                                nguồn nguyên liệu quý cho sản xuất hàng mỹ nghệ và tạo ra vùng sinh thái của hệ san hô. Điều đó cho phép phát triển nền
+                                kinh tế tổng hợp vùng ven biển.</p>
+                                <p><b>Mặt nước nuôi trồng thủy sản: </b>Với 5 cửa sông, Quảng Bình có vùng mặt nước có khả năng nuôi trồng thuỷ sản khá lớn. Tổng diện tích 15.000 ha. Độ mặn ở
+                                vùng mặt nước từ cửa sông vào sâu khoảng 10-15km giao động từ 8-30%o và độ pH từ 6,5- 8 rất thuận lợi cho nuôi tôm cua
+                                xuất khẩu. Chế độ bán nhật triều vùng ven biển thuận lợi cho việc cấp thoát nước cho các ao nuôi tôm cua.</p>
+                                <p><b>Tài nguyên nước: </b>Quảng Bình có hệ thống sông suối khá lớn với mật độ 0,8 – 1,1 km/km2. Có năm sông chính là sông Roòn, sông Gianh, sông
+                                Lý Hoà, sông Dinh và sông Nhật Lệ. Có khoảng 160 hồ tự nhiên và nhân tạo với dung tích ước tính 243,3 triệu m3.</p>
+                                <p><b>Tài nguyên Khoáng sản: </b>Quảng Bình có nhiều loại khoáng sản như vàng, sắt, titan, pyrit, chì, kẽm… và một số khoáng sản phi kim loại như cao
+                                lanh, cát thạch anh, đá vôi, đá mable, đá granit… Trong đó, đá vôi và cao lanh có trữ lượng lớn, đủ điều kiện để phát
+                                triển công nghiệp xi măng và vật liệu xây dựng với quy mô lớn. Có suối nước khoáng nóng 105oC. Trữ lượng vàng tại Quảng
+                                Bình có khả năng để phát triển công nghiệp khai thác và chế tác vàng.</p>
+                                <p><b>Dân số và lao động: </b>Dân số Quảng Bình năm 2008 có 857.818 người. Phần lớn cư dân địa phương là người Kinh. Dân tộc ít người thuộc hai nhóm
+                                chính là Chứt và Bru-Vân Kiều gồm những tộc người chính là: Khùa, Mã Liềng, Rục, Sách, Vân Kiều, Mày, Arem, v.v… sống
+                                tập trung ở hai huyện miền núi Tuyên Hoá và Minh Hoá và một số xã miền Tây Bố Trạch, Quảng Ninh, Lệ Thuỷ. Dân cư phân bố
+                                không đều, 85,5% sống ở vùng nông thôn và 14,5% sống ở thành thị.</p>
+                                <p>Quảng Bình có nguồn lao động dồi dào với 433.618 người, chiếm khoảng 52,26% dân số. Về chất lượng lao động, theo điều
+                                tra dân số thời điểm 1/4/1999 có: 10.720 người có trình độ từ cao đẳng trở lên, trong đó 4.676 cao đẳng, 6.042 đại học
+                                và trên đại học. Lực lượng lao động đã qua đào tạo gần 33.000 người chiếm 8% số lao động.</p>
+                                <p><b>Văn hóa và tiềm năng du lịch: </b>Dãi đất Quảng Bình trải ra như một bức tranh hoành tráng, có rừng, có biển với nhiều cảnh quan thiên nhiên đẹp, thắng
+                                cảnh nổi tiếng: đèo Ngang, đèo Lý Hoà, cửa biển Nhật Lệ, phá Hạc Hải, Cổng Trời… và Vườn quốc gia Phong Nha – Kẻ Bàng
+                                được công nhận là Di sản Thiên nhiên thế giới.</p>
+                                <p>Quảng Bình là vùng đất văn vật, có di chỉ văn hoá Bàu Tró, các di chỉ thuộc nền văn hoá Hoà Bình và Đông Sơn, nhiều di
+                                tích lịch sử như: Quảng Bình Quan, Luỹ Thầy, Rào Sen, Thành Nhà Ngo, thành quách của thời Trịnh – Nguyễn, nhiều địa danh
+                                nổi tiếng trong hai cuộc kháng chiến chống xâm lược của dân tộc như Cự Nẫm, Cảnh Dương, Cha Lo, Cổng Trời, Xuân Sơn,
+                                Long Đại, đường Hồ Chí Minh v.v… Trong quá trình lịch sử, đã hình thành nhiều làng văn hoá nổi tiếng và được truyền tụng
+                                từ đời này sang đời khác như “Bát danh hương”: “Sơn- Hà- Cảnh – Thổ- Văn- Võ- Cổ – Kim”. Nhiều danh nhân tiền bối học
+                                rộng, đỗ cao và nổi tiếng xưa và nay trên nhiều lĩnh vực quân sự, văn hoă – xã hội như Dương Văn An, Nguyễn Hữu Cảnh,
+                                Nguyễn Hàm Ninh, Hoàng Kế Viêm, Võ Nguyên Giáp…</p>
+                                <p><b>Bản đồ Quảng Bình: </b></p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243603.7174841237!2d106.15419777775581!3d17.44496224643888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3138b0f638296f2d%3A0x901f872e6223598f!2zUXXhuqNuZyBCw6xuaCwgVmlldG5hbQ!5e0!3m2!1sfr!2s!4v1595944170671!5m2!1sfr!2s"
+                                    width="660" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                                <p style=" padding-left:200px; padding-top: 30px;">
+                                    Bạn thấy bài viết này như thế nào?
+                                </p>
+                                <div id="iconn" class="row text-center" style="border:1px solid black; border-radius: 30px; margin-left: 80px; margin-right: 80px;">
+                                    <div class="col-md-12">
+                                        <img src="./img/like.gif" width="10%">
+                                        <img src="./img/love.gif" width="10%">
+                                        <img src="./img/haha.gif" width="10%">
+                                        <img src="./img/sad.gif" width="10%">
+                                        <img src="./img/angry.gif" width="10%">
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-12">
+                                        <b>
+                                            <p style="padding-top: 60px; font-size: 25px;">Quét mã QR</p>
+                                        </b>
+                                        <img src="./img/tải xuống.png" width="30%">
+                                    </div>
+                                </div>
+                                <div class="row" style="border: 1px solid #a7a0a0; margin: 50px 15px 0 15px">
+                                    <div class="col-md-2" style="margin: 7px 0 7px 0; top: 9px;">
+                                        <b>
+                                            <p>CHIA SẺ</p>
+                                        </b>
+                                    </div>
+                                    <div class="col-md-1" style="color:blue; font-size: 35px; padding-left: 1px; margin-right: -13px;">
+                                        <i class="fa fa-facebook-square" ></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#40C4FF; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-twitter-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#EB4026; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-google-plus-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#C92228; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-pinterest-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#0077B5; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#34465D; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-tumblr-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#FF4500; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-reddit-square"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#179CDE; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-telegram"></i>
+                                    </div>
+                                    <div class="col-md-1" style="color:#A7A7A7; font-size: 35px; padding-left: 0; margin-right: -13px;">
+                                        <i class="fa fa-envelope-square"></i>
+                                    </div>
+                                </div><!--Share-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <b><p style="font-size: 20px; padding-top: 20px;">BÀI VIẾT LIÊN QUAN</p></b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            </ol><!--Wrapper for carousel items-->
+                                            <div class="carousel-inner">
+                                                <div class="item carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/ngay-hoi-2020-480x320.jpeg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Quảng Bình tham gia ngày hội du lịch TP.Hồ Chí Minh lần thứ 16</h5>
+                                                                    <div class="star-rating">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/BT-Nguyen-Ngoc-Thien-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5 >Tiếp tục quảng bá du lịch Quảng Bình</h5>
+                                                                    <div class="star-rating" style="margin-top: 30px;">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/charte-HN-ĐH-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Độc đáo chuyến tào charte đưa du khách từ Hà Nội về Quảng Bình</h5>
+                                                                    <div class="star-rating">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                    </div>
+                                                </div><!--item carousel-item active-->
+                                                <div class="item carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/thien-duong-cave-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Báo Mỹ giới thiệu cảnh đẹp và con người Quảng Bình</h5>
+                                                                    <div class="star-rating" style="margin-top: 33px;">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/tulan-race-2020-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Cuộc đua khám phá Tú Làn</h5>
+                                                                    <div class="star-rating" style="margin-top: 53px;">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/hop-tac-QB-TN-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Liên kết hợp tác phát triển du lịch Quảng Bình - Thái Nguyên</h5>
+                                                                    <div class="star-rating">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                    </div>
+                                                </div><!--item carousel-item-->
+                                                <div class="item carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/ga20dh-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Chạy lại hằng ngày các chuyến tàu từ Hà Nội đi Quảng Bình</h5>
+                                                                    <div class="star-rating" style="margin-top: 50;">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/thien-duong-cave-480x320.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Giảm 50% khi tham quan đối với các sản phẩm du lịch</h5>
+                                                                    <div class="star-rating" style="margin-top: 0px;">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                        <div class="col-sm-4">
+                                                            <div class="thumb-wrapper">
+                                                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                                <div class="img-box">
+                                                                    <img src="./img/dong-hoi-market-480x300.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="thumb-content">
+                                                                    <h5>Khu chợ sáng thú vị bên sông Nhật Lệ</h5>
+                                                                    <div class="star-rating" style="margin-top:27px">
+                                                                        <ul class="list-inline">
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--col-->
+                                                    </div>
+                                                </div>
+                                                <!--item carousel-item-->
+                                            </div>
+                                        </div><!--Carousel indicators-->
+                                        
+                                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                            <i class="fa fa-angle-left"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </a><!-- Carousel controls -->
+                                    </div>
+                                </div>
+                                <div class="row" style="border-bottom: 1px solid silver">
+                                    <div class="col-md-6">
+                                        <div style="padding-left: 200px;">
+                                        <p>BÌNH LUẬN</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>BÌNH LUẬN FACEBOOK</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <b>
+                                            <p style="font-size: 20px; padding-top: 50px;">ĐỂ LẠI MỘT BÌNH LUẬN</p>
+                                        </b>
+                                    </div>
+                                </div>
+                               <div class="row">
+                                   <div class="col-md-12">
+                                       <form>
+                                        <textarea
+                                            style="width: 100%; color:black; border: 1 solid black; padding: 5px 5px 0px 5px; margin-top: 6px; border-radius: 5px;"
+                                            rows="5" name="ykien" placeholder="Ý kiến phản hồi"></textarea>
+                                       </form>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-md-4">
+                                       <form>
+                                        <input
+                                            style="width: 100%; color:black; border: 1px solid black; padding: 3px 5px 0px 5px; margin-top: 6px; border-radius: 5px;"
+                                            type="text" name="name" placeholder="Tên*">
+                                       </form>
+                                   </div>
+                                   <div class="col-md-4">
+                                    <form action="">
+                                        <input
+                                            style="width: 100%; color:black; border: 1px solid black; padding: 3px 5px 0px 5px; margin-top: 6px; border-radius: 5px;"
+                                            type="email" name="Emaill" placeholder="Email*">
+                                    
+                                        </div>
+                                    </form>
+                                   <div class="col-md-4">
+                                       <form action="">
+                                        <input
+                                            style="width: 100%; color:black; border: 1px solid black; padding: 3px 5px 0px 5px; margin-top: 6px; border-radius: 5px;"
+                                            type="text" name="Website" placeholder="Website">
+                                        
+                                        </div>
+                                       </form>
+                                       
+
+                                   </div>
+                               </div>
+                               <div class="row" style="margin: 20px 0 20px 20px">
+                                   <div class="col-md-12">
+                                       <form>
+                                           <input type="checkbox" name="Save name">
+                                       </form>
+                                       <b><p style="font-size: 11px;">LƯU TÊN CỦA TÔI, EMAIL, VÀ TRANG WEB TRONG TRÌNH DUYỆT NÀY CHO LẦN BÌNH LUẬN KẾ TIẾP CỦA TÔI.</p></b>
+                                       <button style="background: silver;"> GỬI ĐI </button>
+                                   </div>
+                               </div>                            
+                       </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./img/Thoitiet.PNG" width="100%">
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;">
+                            <div class="col-md-12">
+                                <img src="./img/BANER-VUONG-copy-585x392.jpg" width="100%">
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;">
+                            <div class="col-md-12">
+                                <img src="./img/hotro.jpg" width="100%">
+                            </div>
+                        <div class="row" style="padding-top: 20px;">
+                        <div class="col-md-12">
+                            <img src="./img/pa.jpg" width="100%">
+                        </div>
+                        <div style="background: white;margin-top: 20px">
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-8">
+                                    <h6 style="background-color: green;color: white;padding: 5px;">BÀI VIẾT XEM NHIỀU</h6>
+                                </div>
+                                <!--col-->
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/imgr1.jpg" width="100%">
+                                </div>
+                                <div id="information" class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Liên kết hợp tác phát triển du lịch Quảng Bình-Thái Nguyên</p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/dem-dong-hoi.jpg" width="100%">
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Tiềm năng du lịch Đồng Hới</p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/lich-su-van-hoa-01-270x186.jpg" width="100%">
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Lịch sử - Văn hóa</p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/le-hoi-dua-thuyen-truyen-thong-tren-song-kien-giang-01.jpg" width="100%">
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Lễ hội đua thuyền truyền thống trên sông Kiến Giang</p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/sondonganhsang.jpg" width="100%">
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Hãy chấp nhận sự thực - Sơn Đoong không phải nơi dành cho bạn </p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                            <div class="row" style="padding: 10px">
+                                <div class="col-md-5">
+                                    <img src="img/MeSuot1.jpg" width="100%">
+                                </div>
+                                <div class="col-md-7">
+                                    <p style="font-weight: bold;font-size: 13px">Mẹ Suốt-Người mẹ anh hùng</p>
+                                    <p style="font-size: 11px;color: silver;margin-top: -7px"><i class="fa fa-calendar">1/7/2020</i> <i
+                                            class=" fa fa-comments"> 7</i> <i class="fa fa-eye"> 12</i></p>
+                                </div>
+                            </div>
+                            <!--row-->
+                        </div>
+                        <!--color-->
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div><!--Hanhtrinh-->
+    <a href="#" class="cd-top">Back To Top</a><!--Back to Top-->
+    <div id="footer" style="background: #2c2f34">
+        <div class="social-button">
+            <div class="social-button-content">
+                <a href="tel:0981481368" class="call-icon" rel="nofollow">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <div class="animated alo-circle"></div>
+                    <div class="animated alo-circle-fill  "></div>
+                    <span>Hotline: 037 778 887</span>
+                </a>
+                <a href="sms:0981481368" class="sms">
+                    <i class="fa fa-weixin" aria-hidden="true"></i>
+                    <span>SMS: 037 778 887 </span>
+                </a>
+                <a href="https://www.facebook.com/phamhoan252" class="mes">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <span>Nhắn tin Facebook</span>
+                </a>
+                <a href="http://zalo.me/0377788187" class="zalo">
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <span>Zalo: 037.778.887</span>
+                </a>
+            </div>
+        
+            <a class="user-support">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <div class="animated alo-circle"></div>
+                <div class="animated alo-circle-fill"></div>
+            </a>
+        </div>
+        <!--button chat-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6 style="background: black;color: white;padding: 5px;margin-top: 30px">ĐĂNG KÝ NHẬN BẢN TIN
+                            </h6>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                    <p style="color: white;font-size:13px ">Theo dõi Bản tin của chúng tôi để nhận các tin tức và sự kiện
+                        mới nhất. Đừng bỏ lỡ!</p>
+                    <form>
+                        <input type="text" name="name" placeholder="Tên của bạn*">
+                        <input style="margin-top: 5px" type="email" name="email" placeholder="Email của bạn*">
+                        <button type="submit" name="done">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+                <!--col-->
+                <div class="col-md-4 textp">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6 style="background: black;color: white;padding: 5px;margin-top: 30px">DANH MỤC NỔI BẬT</h6>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                    <p style="margin-top: 10px">Tin tức</p>
+                    <p>Danh lam thắng cảnh</p>
+                    <p>Sự kiện</p>
+                    <p>Thông tin cần biết</p>
+                    <p>Ẩm thực</p>
+                    <p>Khác</p>
+                    <p>Phong Nha – Kẻ Bàng</p>
+                    <p>Danh nhân tiêu biểu</p>
+                    <p>Di tích lịch sử</p>
+                    <p>Văn hóa & Lễ hội</p>
+                </div>
+                <!--col-->
+                <div class="col-md-4 textp">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6 style="background: black;color: white;padding: 5px;margin-top: 30px">BÀI VIẾT GẦN ĐÂY</h6>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                    <div class="row" style="margin-top: 10px">
+                        <div class="col-md-5">
+                            <img src="img/f1.jpg" width="100%">
+                        </div>
+                        <!--col-->
+                        <div class="col-md-7" style="margin-top: 10px">
+                            <p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời
+                                Du lịch Việt Nam</p>
+                            <p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i
+                                    class="fa fa-comments"> 0</i> </p>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                    <div class="row" style="margin-top: -10px">
+                        <div class="col-md-5">
+                            <img src="img/f1.jpg" width="100%">
+                        </div>
+                        <!--col-->
+                        <div class="col-md-7" style="margin-top: 10px">
+                            <p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời
+                                Du lịch Việt Nam</p>
+                            <p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i
+                                    class="fa fa-comments"> 0</i> </p>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                    <div class="row" style="margin-top: -10px">
+                        <div class="col-md-5">
+                            <img src="img/f1.jpg" width="100%">
+                        </div>
+                        <!--col-->
+                        <div class="col-md-7" style="margin-top: 10px">
+                            <p style="color: white;font-weight: bold;">Ngày 09/7/1960 – Dấu son lịch sử đánh dấu sự ra đời
+                                Du lịch Việt Nam</p>
+                            <p style="font-size: 12px;color: silver"><i class="fa fa-calendar"> 6/7/2020</i> <i
+                                    class="fa fa-comments"> 0</i> </p>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                </div>
+                <!--col-->
+            </div>
+            <!--row-->
+            <div>
+                <hr style="background: #ccc">
+            </div>
+            <div class="row" style="padding: 30px; color: white;">
+                <div class="col-md-3">
+                    <img src="./img/logo du lịch quảng bình.png" width="100%">
+            
+                </div>
+                <div class="col-md-6">
+                    <h4>VỀ CHÚNG TÔI</h4>
+                    <p>Nhằm quảng bá hình ảnh du lịch Quảng Bình đến với mọi người trong và ngoài nước và
+                        cho các du khách biết Quảng Bình là một thành phố năng động, đáng sống. Du lịch Quảng
+                        Bình không chỉ đẹp ở danh lam thắng cảnh mà nó còn đẹp ở văn hóa và con người. Đội ngũ
+                        phát triển luôn mong sẽ có những thước phim, hình ảnh chất lượng nhất để đưa bạn đọc đến
+                        gần hơn với Quảng Bình. Website còn lập ra nhằm mục đích hướng dẫn cho các du khách nhưng
+                        cửa hàng, món ăn, và nhà hàng đáp ứng nhu cầu của chính mỗi một con người khi đặt chân đến nơi
+                        đây.
+                    </p>
+            
+                </div>
+                <div class="col-md-3">
+                    <h4>THEO DÕI CHÚNG TÔI</h4>
+                    <i class="fa fa-facebook" style="padding-left: 20px;"></i>
+                    <i class="fa fa-instagram" style="padding-left: 50px;"></i>
+                    <i class="fa fa-youtube" style="padding-left: 50px;"></i>
+                    <i class="fa fa-envelope" style="padding-left: 50px;"></i>
+                </div>
+                <!--col-->
+            </div>
+        </div>
+        <!--container-->
+    </div>
+    <!--footer-->
+    <div id="copyright" style="background: black;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p style="color: white;font-size: 15px;margin-top: 10px">©Designed by PhamHoan-19CDTH41</p>
+                </div>
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+    </div>
+    <!--copyright-->
+    <script>
+        $(document).ready(function () {
+            $('.user-support').click(function (event) {
+                $('.social-button-content').slideToggle();
+            });
+        });
+    </script>
+    <script src="./js/backtotop.js"></script>
+    
+</body>
+</html>
